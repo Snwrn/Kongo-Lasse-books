@@ -1,0 +1,416 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+	* Stylesheet for Kongo Lasse Bokhandel, IK1091  
+	* @author Ekaterina Kretiv
+	*/
+
+/* Profil färger: 
+* Vinröd: #922E1F
+* Index bakgrund: rgba(146,46,31,0.3);
+* Genomskinlig grå: background-color: rgba(0,0,0,0.3);
+*/
+body {
+	overflow-x: hidden;
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+#topColorLine {
+	top: 0;
+	background-color: #922E1F;
+	height: 10px;
+	margin-bottom: 20px;
+}
+
+/* Navbar */
+#logoPosition {
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+}
+#logoPosition a {
+	margin: 0;
+}
+#logoPosition img {
+	width: 200px;
+}
+#mobileNavLogo {
+	position: absolute;
+	left: 50%;
+	margin-left: -100px;
+}
+#mobileNavLogo a {
+	margin: 0;
+}
+#mobileNavLogo img {
+	width: 200px;
+}
+#searchIcon {
+	width: 25px;
+}
+#expandableNav {
+	margin-top: 20px;
+	border-top: 0px solid gray;
+	margin-bottom: 3%;
+}
+#expandableNav ul {
+	display: flex;
+	justify-content: space-around;
+	width: 80%;
+	margin: 0 auto;
+}
+#expandableNav ul li {
+	margin: 0;
+}
+.navbar a {
+	color: black;
+	font-family: 'Rubik', sans-serif;
+	text-align: center;
+	margin-right: .5rem;
+	margin-left: .5rem;
+}
+.navbar a:hover, .nav-link .active {
+	color: #922E1F;
+}
+#mobileNav {
+	padding-bottom: 25px;
+}
+#mobileNav button {
+	border: none;
+}
+.dropdown-divider {
+	border-top: 1px solid #922E1F;
+}
+#mobileNav .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(146,46,31, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+#desctopNav ul {
+	width: 100%;
+	flex-direction: row-reverse;
+}
+#cartIcon {
+	width: 30px;
+}
+/* Navbar END */
+
+
+/* Footer */
+.page-footer {
+	background-color: #922E1F;
+	margin-top: 3%;
+}
+.page-footer a {
+	color: antiquewhite;
+}
+.page-footer p {
+	color: antiquewhite;
+}
+.page-footer h6 {
+	color: antiquewhite;
+	font-family: 'Rubik', sans-serif;
+	letter-spacing: 2px;
+}
+#copyright p {
+	text-align: center;
+}
+/* Footer END */
+
+
+/* Carousel */
+#carouselContainer {
+	position: relative;
+	background-color: rgba(146,46,31,0.3);
+	overflow: hidden;
+	margin-top: 1%;
+}
+#carouselExampleControls {
+	width: 70%;
+	margin: 1% auto;
+}
+.carousel-inner img {
+	width: 100%;
+	height: 100%;
+}
+.carousel-control-prev-icon {
+	background-image: url("../../img/SVG/controlPrev.svg");
+}
+.carousel-control-next-icon {
+	background-image: url("../../img/SVG/controlNext.svg");
+}
+.carousel-control-prev {
+	margin-left: -9vw;
+}
+.carousel-control-next {
+	margin-right: -9vw;
+}
+#carouselExampleControls h3 {
+	font-size: 1.3rem;
+	font-family: 'Julius Sans One', sans-serif;
+	text-align: center;
+}
+/* Carousel END */
+
+
+/* Index page menu*/
+#topHeader {
+	font-size: 2.2vw;
+	z-index: 1;
+	font-weight: 500;
+}
+#topHeader p {
+	margin: 0;
+}
+.menuCell {
+	height: 20vw;
+	background-position: center;
+	background-size: cover;
+}
+#topHeader p {
+	font-family: 'Rubik', sans-serif;
+}
+#menuSquare .col-12 {
+	-webkit-filter: sepia(100%);
+	filter: sepia(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+#menuSquare h3 {
+	font-size: 2vw;
+}
+#menuSquare {
+	max-width: 100%;
+	padding: 20px;
+	margin: 0 auto;
+	background-color: rgba(146,46,31,0.3);
+	margin-bottom: 40px;
+	width: 100vw;
+}
+#menuSquare .col-12:hover {
+	-webkit-filter: sepia(0);
+	filter: sepia(0);
+}
+#topHeader, #menuSquare h3 {
+	font-family: 'Rubik', sans-serif;
+	letter-spacing: 2px;
+	background-color: rgba(0,0,0,0.3);
+	width: 100%;
+	text-align: center;
+	color: antiquewhite;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/* Index page menu END */
+
+
+/* Katalog styling */
+.breadcrumb {
+	margin-bottom: 0;
+	background-color: white;
+	border-radius: 0;
+}
+.breadcrumb a {
+	color: darkgray;
+}
+#showMore {
+	width: 100%;
+	background-color: #922E1F;
+	border-radius: 0;
+}
+#showMore span {
+	font-family: 'Rubik', sans-serif;
+}
+#kategoriNamn {
+	font-family: 'Rubik', sans-serif;
+	text-align: center;
+	width: 100%;
+	background-color: #922E1F;
+	color: antiquewhite;
+	padding: 1% 0;
+}
+/* Katalog styling END */
+
+
+/* Shopping cart styling */
+#adresupgift {
+	width: 70%;
+	margin: 0 auto;
+}
+#betalning {
+	width: 70%;
+	margin: 3% auto;
+}
+#betalning div {
+	display: block;
+}
+#totalSumma {
+	border-top: 2px solid #922E1F;
+	width: 70%;
+	margin: 0 auto;
+	vertical-align: text-bottom;
+}
+#totalSumma div {
+	display: flex;
+	margin-top: 5%;
+}
+#totalSumma p {
+	font-size: 10px;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+#totalSumma span {
+	width: 50%;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: right;
+}
+#finishBtn button {
+	background-color: #922E1F;
+	color: antiquewhite;
+	margin-left: 15%;
+	width: 70%;
+}
+#frakt {
+	width: 70%;
+	margin: 6% auto;
+}
+#frakt h4 {
+	font-size: 20px;
+}
+#frakt span {
+	width: 100%;
+	display: block;
+	margin-left: 18px;
+}
+#priceAndBtn {
+	display: flex;
+}
+#priceAndBtn img {
+	width: 15px;
+	vertical-align: baseline;
+	margin-right: 10px;
+}
+#preSumma {
+	border-top: 2px solid #922E1F;
+	width: 70%;
+	margin: 0 auto;
+	vertical-align: text-bottom;
+}
+#preSumma div {
+	display: flex;
+	margin-top: 5%;
+}
+#preSumma h3 {
+	width: 50%;
+}
+#preSumma span {
+	width: 50%;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: right;
+}
+tr img {
+	width: 130px;
+}
+.number {
+	width: 10%;
+	min-width: 30px;
+	float: left;
+}
+#personnummer {
+	max-width: 100%;
+}
+/* Shopping cart styling END */
+
+
+/* Produkt styling */
+#produkt {
+	margin-bottom: 5%;
+}
+dl {
+	margin: 6% 0 0 !important;
+	border-top: 1px solid #922E1F;
+	background-color: rgba(146,46,31, 0.9);
+	padding: 20px 10px;
+}
+dt {
+	float: left;
+	width: 30%;
+	margin-bottom: 3%;
+	color: antiquewhite;
+	font-size: 14px;
+}
+dd {
+	float: left;
+	color: antiquewhite;
+	width: 50%;
+	font-size: 14px;
+}
+#buyBtn {
+	background-color: #922E1F;
+	border-radius: 0;
+	justify-content: center;
+	margin-left: 30px;
+}
+#buyBtn a {
+	color: antiquewhite;
+	font-size: 15px;
+}
+.efternamn {
+	font-size: 14px;
+}
+.descript {
+	margin-top: 10%;
+}
+/* Produkt styling END */
+
+
+/* Förslag carousel */
+#item1, #item2 {
+	margin: 0;
+}
+#item1, #item2 {
+	margin: 0;
+}
+/* Förslag carousel END */
+
+
+/* Förslag and Shopping card */
+.pris {
+	font-family: 'open sans', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+}
+.pris h3 {
+	min-width: 64px;
+}
+/* Förslag and Shopping card END*/
+
+
+/* Media queries*/
+@media only screen and (max-width: 768px) {
+#BooksCards {
+	width: 60%;
+	margin: 0 auto;
+}
+#BooksCards h4 {
+	font-size: 16px;
+}
+#BooksCards p {
+	font-size: 12px;
+}
+#BooksCards .card {
+	min-width: 150px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+#BooksCards h4 {
+	font-size: 17px;
+}
+#BooksCards p {
+	font-size: 13px;
+}
+}
